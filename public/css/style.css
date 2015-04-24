@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("../images/body.png") repeat-y scroll 50% 0px transparent;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#content {
+
+}
+
+
+
+#right {
+    width: 600px;
+    float: left;
+    margin-left: 40px;
+}
+
+#right #type_tag {
+    margin-top: 40px;
+    font-size: 15px;
+    color:#888;
+    font-weight: bolder;
+}
+
+#right #articles {
+    margin-top: 10px;
+}
+
+#right #articles div.article {
+    margin-top: 50px;
+    box-shadow: 0px 3px 0px 0px #ddd;
+}
+
+#right #articles div.article div.article_main {
+    background-color: #fff;
+    padding: 20px;
+}
+#right #articles div.article div.article_main p.post_info{
+    color:#CD0000;
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+
+#right #articles div.article p.article_title {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#right #articles div.article p.article_content_less {
+    margin-top: 5px;
+    color: #666;
+    line-height: 2;
+}
+
+#right #articles div.article a.readmore {
+    background-color: #CD4654;
+    padding: 8px;
+    color: #fff;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.clear {
+    clear: both;
+}
+
+#page{
+    text-align: center;
+    margin: 20px;
+}
+#page a.page{
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #CD4654;
+    color:#fff;
+}

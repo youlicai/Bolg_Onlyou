@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<div id="articles">
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>标题</th>
+            <th>标签</th>
+            <th>封面</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        <% if(articles!=null){for(i=0;i< articles.length;i++){%>
+        <tr>
+            <td><%=articles[i].id%></td>
+            <td><%=articles[i].title%></td>
+            <td><%=articles[i].coverName%></td>
+            <td><%=articles[i].createTime%></td>
+            <td>详情|</td>
+            <td></td>
+        </tr>
+        <% }}%>
+    </table>
+</div>
+</body>
+</html>

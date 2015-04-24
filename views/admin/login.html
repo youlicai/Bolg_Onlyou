@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>登陆</title>
+    <link href="../../css/admin/login.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../js/admin/admin.js"></script>
+
+</head>
+<body>
+<div id="container">
+    <div id="login">
+        <div class="avatar_img">
+            <img src="../images/admin/user_admin.jpg" alt=""/>
+        </div>
+        <h2>Member Login</h2>
+
+        <div id="form">
+            <input id="username" name="username" type="text" class="text" value="USERNAME"
+                   onfocus="if (this.value == 'USERNAME') {this.value = '';}"
+                   onblur="if (this.value == '') {this.value = 'USERNAME';}">
+            <input id="password" name="password" type="password" value="Password"
+                   onfocus="if (this.value == 'Password') {this.value = '';}"
+                   onblur="if (this.value == '') {this.value = 'Password';}">
+
+            <div class="submit">
+                <input type="submit" value="LOGIN" data-name="submit">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

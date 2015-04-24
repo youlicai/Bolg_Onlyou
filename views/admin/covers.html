@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        #cover .cover{
+            width:240px;
+            height: 160px;
+            float: left;
+            margin: 10px;
+            padding: 5px;
+        }
+        #cover .cover:hover{
+            background-color: #CAE1FF;
+            color: #fff;
+            border-radius: 5px;
+        }
+        #cover .cover img{
+            width: 100%;
+        }
+        #cover .cover p{
+            text-align: center;
+            font-weight: bold;
+
+        }
+        #cover .cover_add{
+            width:240px;
+            height: 160px;
+            float: left;
+            margin: 10px;
+            padding: 5px;
+        }
+        #cover .cover_add:hover{
+            background-color: #CAE1FF;
+        }
+        #cover .cover_add img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="cover">
+    <% if(covers!=null){ for(i=0;i< covers.length;i++){%>
+    <div class="cover">
+        <img src="http://cdn.demo.fabthemes.com/binary/files/2012/06/p8-600x300.jpg" class="cover_img">
+        <p class="cover_title"><%= covers[i].coverName%></p>
+    </div>
+    <%}}%>
+    <div class="cover_add">
+        <img src="http://cdn.demo.fabthemes.com/binary/files/2012/06/p8-600x300.jpg" class="cover_img">
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+#left {
+    width: 280px;
+    float: left;
+    margin-left: 10px;
+}
+
+#first {
+    background-color: #fff;
+    padding: 18px
+}
+
+
+
+#searchform {
+    border: 1px solid #DDD;
+    background: none repeat scroll 0% 0% #F8F8F8;
+    padding: 3px 6px;
+
+}
+
+input#input_text {
+    width: 190px;
+    border: medium none;
+    background: none repeat scroll 0% 0% transparent;
+    color: #999;
+}
+
+input#input_text:focus {
+    color: #333;
+}
+
+#searchsubmit {
+    background: url("../images/search.png") repeat scroll 0% 0% transparent;
+    height: 30px;
+    width: 30px;
+    border: medium none;
+    padding: 0px;
+}
+
+ul#shareicons {
+    padding: 0px;
+    height: 25px;
+    margin: 15px 0px 0px;
+    list-style: outside none disc;
+}
+
+ul#shareicons li {
+    float: left;
+    margin-right: 12px;
+    list-style: outside none none;
+}
+
+ul#shareicons li img{
+    width: 24px;
+}
+
+#second {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+ul#articles {
+    padding: 20px;
+    margin: 0px;
+    list-style: outside none disc;
+}
+
+ul#articles li {
+    padding: 7px 2px;
+    list-style: outside none none;
+    border-bottom: 1px solid #DDD;
+}
+
+ul#articles li a {
+    color: #777;
+    text-decoration: none;
+}
+
+#third {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+ul#archives {
+    padding: 20px;
+    margin: 0px;
+    list-style: outside none disc;
+}
+
+ul#archives li {
+    padding: 7px 2px;
+    list-style: outside none none;
+    border-bottom: 1px solid #DDD;
+}
+
+ul#archives li a {
+    color: #777;
+    text-decoration: none;
+}

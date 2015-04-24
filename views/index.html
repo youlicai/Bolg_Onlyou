@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onlyou</title>
+    <link rel="shortcut icon" href="../../images/favicon.ico"/>
+    <link rel='stylesheet' href='../../css/reset.css'/>
+    <link rel='stylesheet' href='../../css/style.css'/>
+    <link rel='stylesheet' href='../../css/left.css'/>
+    <link rel='stylesheet' href='../../css/header.css'/>
+    <link rel='stylesheet' href='../../css/footer.css'/>
+    <link rel='stylesheet' href='../../css/article_detail.css'/>
+    <script src="http://code.jquery.com/jquery-latest.js" type='text/javascript'></script>
+    <script src="/js/index.js" type='text/javascript'></script>
+    <script type="text/javascript" charset="utf-8"
+            src="http://static.bshare.cn/b/buttonLite.js#uuid=0bf8e58b-0af6-4231-b471-456a8ae228f9&style=-1"></script>
+    <!--<script type="text/javascript" charset="utf-8">-->
+    <!--bShare.addEntry({-->
+    <!--title: "",-->
+    <!--url: "www.onlyou.pw",-->
+    <!--summary: "",-->
+    <!--pic: ""-->
+    <!--});-->
+    <!--</script>-->
+</head>
+<body>
+<div id="main">
+    <div id="content">
+        <% include common/left.html %>
+        <div id="right">
+            <% include common/header.html %>
+            <div id="article_list" class="show">
+                <div id="type_tag"><a>当前类别:</a><a><%=current_tag%></a></div>
+                <div id="articles">
+                    <% if(articles!=null){for(i=0; i< articles.length; i++) {%>
+                    <div class="article" style="margin-top: 0px;">
+                        <img class="article_img"
+                             src="http://cdn.demo.fabthemes.com/binary/files/2012/06/p8-600x300.jpg">
+
+                        <div class="article_main">
+                            <p class="article_title" data-id=<%=articles[i].id%>><%=articles[i].title %></p>
+
+                            <p class="post_info">Posted on June 9 - 2012 by axis | <span class="ds-thread-count"
+                                                                                         data-thread-key="<%=articles[i].id%>"></span>
+                                Comment</p>
+
+                            <p class="article_content_less">
+                                <%-articles[i].content %>
+                            </p>
+                            <a class="readmore" data-id=<%=articles[i].id%>>Read More</a>
+                        </div>
+                    </div>
+
+                    <% } }%>
+                </div>
+                <div id="page">
+                    <a class="page" data-name="pre" tag=<%=current_tag%> pageId=<%=pageId %> >上一页</a>
+                    <a class="page" data-name="next" tag=<%=current_tag%> pageId=<%=pageId %> >下一页</a>
+                </div>
+
+            </div>
+            <% include common/article_detail.html %>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <% include common/footer.html %>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #tags {
+            width: 100%;
+            min-width: 400px;
+
+        }
+
+        th {
+            border: 1px solid #0785d1;
+            padding: 5px;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid #0785d1;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        tr:hover {
+            background-color: #00a0e9;
+            color:#fff;
+        }
+        a{
+            cursor: pointer;
+        }
+        #ceng{
+            display: none;
+            padding: 20px;
+            width: 300px;;
+            background-color: #00b7ee;
+            top:100px;
+            left:200px;
+            position: fixed;
+        }
+
+        #ceng p em{
+            text-align: right;
+            display: inline-block;
+            width: 70px;
+        }
+        #ceng p .content{
+            margin-left: 10px;
+            display: inline-block;
+        }
+        #ceng #update{
+            display: block;
+            text-align: right;
+            font-weight: bold;
+            color:#fff;
+        }
+    </style>
+</head>
+<body >
+
+<div>
+    <table id="tags" cellpadding="0" cellspacing="0" >
+        <tr>
+            <th style="width: 10%">ID</th>
+            <th style="width: 30%">TagName</th>
+            <th style="width: 60%">操作</th>
+        </tr>
+        <% if(tags!=null){for(i=0; i< tags.length; i++) {%>
+        <tr>
+            <td><%-tags[0].id %></td>
+            <td><%-tags[0].tagName %></td>
+            <td><a onclick="openCeng()">修改</a> | <a>删除</a></td>
+        </tr>
+        <%}}%>
+
+    </table>
+</div>
+
+<div id="ceng">
+    <p><em>ID</em> <label class="content" name="tagname" id="tagId" style="background-color: #999999">1</label></p>
+    <p><em>tagName</em> <input class="content" type="text" name="tagname" id="tagname"></p>
+    <a id="update">修改</a>
+</div>
+</body>
+
+<script type="application/javascript">
+
+   function openCeng(){
+       var ceng=document.getElementById("ceng");
+       ceng.style.display="block";
+
+   }
+
+    function openorcloseUpdateCeng(){
+        var ceng=document.getElementById("ceng");
+        if(ceng.style.display=="block"){
+            ceng.style.display="none";
+        }
+    }
+
+</script>
+</html>

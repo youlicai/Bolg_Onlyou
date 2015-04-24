@@ -1,0 +1,70 @@
+<div id="left">
+
+    <p style="display: none" class="BSHARE_TEXT">分享的文本摘要。</p>
+    <div id="first">
+        <form id="searchform" role="search" action="http://demo.fabthemes.com/binary/" method="get">
+            <input id="input_text" class="field" type="text" placeholder="Search …" value="" name="s"/>
+            <input id="searchsubmit" class="submit" type="submit" value="" name="submit"/>
+        </form>
+        <ul id="shareicons">
+            <li>
+                <a title="分享到QQ空间" onclick="javascript:bShare.share(event,'qzone',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/qzone.gif"/>
+
+            </a></li>
+            <li> <a title="分享到新浪微博" onclick="javascript:bShare.share(event,'weixin',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/weixin.gif"/>
+
+            </a></li>
+            <li><a title="分享到新浪微博" onclick="javascript:bShare.share(event,'sinaminiblog',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/sinaminiblog.gif"/>
+
+            </a></li>
+            <li><a title="分享到新浪微博" onclick="javascript:bShare.share(event,'douban',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/douban.gif"/>
+
+            </a></li>
+            <li><a title="分享到新浪微博" onclick="javascript:bShare.share(event,'weixin',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/facebook.gif"/>
+
+            </a></li>
+            <li><a title="分享到新浪微博" onclick="javascript:bShare.share(event,'weixin',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/xueqiu.gif"/>
+
+            </a></li>
+            <li style="margin-right: 0px;"><a title="分享到新浪微博" onclick="javascript:bShare.share(event,'weixin',0);return false;" style="cursor:pointer;color:#2e3192;">
+                <img alt="StumbleUpon"
+                     src="http://static.bshare.cn/frame/images//logos/mp2/bgoogle.gif"/>
+
+            </a></li>
+            <li class="clear"></li>
+
+        </ul>
+    </div>
+    <div id="second">
+        <h2 style="border-bottom: 5px solid #EEEBE6;padding: 10px 20px; ">最近文章</h2>
+        <ul id="articles">
+            <% if(article_titles!=null){ for(i=0; i< article_titles.length; i++){%>
+            <li class="readDetail" data-id=<%=article_titles[i].id%>
+                <% if(i==0){ %> style="margin-top: 0px;padding-top: 0px;" <%}%>><a><%=article_titles[i].title %></a>
+            </li>
+            <%}}%>
+        </ul>
+    </div>
+    <div id="third">
+        <h2 style="border-bottom: 5px solid #EEEBE6;padding: 10px 20px;">文章存档</h2>
+        <ul id="archives">
+            <li style="margin-top: 0px;padding-top: 0px;"><a>2015年2月</a></li>
+            <li><a>2015年1月</a></li>
+            <li><a>2014年12月</a></li>
+            <li><a>2014年11月</a></li>
+            <li><a>2014年10月</a></li>
+        </ul>
+    </div>
+</div>

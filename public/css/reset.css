@@ -1,0 +1,24 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    margin: 0px;
+    padding: 0px
+}

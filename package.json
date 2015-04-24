@@ -1,0 +1,21 @@
+{
+    "name": "application-name",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "body-parser": "*",
+        "express": "3.15.3",
+        "ejs": "*",
+        "mongodb": "*",
+        "monk": "*",
+        "mongoose":"*",
+        "express-session":"*",
+        "bson":"*",
+        "ueditor":"*",
+        "formidable":"*",
+        "connect-multiparty":"*"
+    }
+}

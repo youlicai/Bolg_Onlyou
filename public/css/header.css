@@ -1,0 +1,30 @@
+
+#header{
+    background-color: #fff;
+    padding: 15px;
+}
+#header a{
+    display: block;
+    text-align: center;
+    margin: 0px;
+    color: #111;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: serif;
+}
+#header ul{
+    height: 20px;
+    margin: 0px;
+    margin-top: 24px;
+}
+#header ul li{
+    list-style: outside none none;
+    float: left;
+    margin-right: 53px;
+}
+
+#header ul li a{
+    font-size: 16px;
+    color:#999;
+}
